@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ERROR Social Manager</title><link rel="stylesheet" href="/static/style.css">
+</head><body>
+<header><div class="brand">ERROR <span>Social Manager</span></div><div class="status">● API SYSTEM ONLINE</div></header>
+<main>
+<section class="hero"><p class="eyebrow">SOCIAL MEDIA MANAGEMENT</p><h1>Manage your social media from one dashboard.</h1>
+<p class="sub">Connect authorized accounts, publish content and monitor real analytics.</p></section>
+<section class="platforms">
+<div class="platform"><div class="icon">T</div><h2>TikTok</h2><p>OAuth • Publishing • Profile</p><a href="/auth/tiktok">Connect TikTok</a></div>
+<div class="platform"><div class="icon">I</div><h2>Instagram</h2><p>OAuth • Publishing • Insights</p><a href="/auth/instagram">Connect Instagram</a></div>
+<div class="platform"><div class="icon">▶</div><h2>YouTube</h2><p>OAuth • Upload • Channel</p><a href="/auth/youtube">Connect YouTube</a></div>
+</section>
+<section class="dashboard">
+<div class="card"><span>FOLLOWERS</span><strong>—</strong></div>
+<div class="card"><span>VIEWS</span><strong>—</strong></div>
+<div class="card"><span>LIKES</span><strong>—</strong></div>
+<div class="card"><span>POSTS</span><strong>—</strong></div>
+</section>
+<section class="composer"><h2>Create Post</h2>
+<textarea id="caption" placeholder="Write your caption..."></textarea>
+<select id="platform"><option>TikTok</option><option>Instagram</option><option>YouTube</option></select>
+<input id="media" placeholder="Public media URL">
+<button onclick="publish()">Prepare Publish Request</button><div id="result"></div>
+</section></main><script src="/static/app.js"></script></body></html>
